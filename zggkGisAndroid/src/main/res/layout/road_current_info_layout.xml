@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/road_current_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="路线编码 路线名称"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_location" />
+
+        <TextView
+            android:id="@+id/road_current_position_txt"
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_station" />
+
+        <TextView
+            android:id="@+id/road_current_station_txt"
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/road_type" />
+
+        <TextView
+            android:id="@+id/road_current_roadtype_txt"
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/road_width" />
+
+        <TextView
+            android:id="@+id/road_current_roadwidth_txt"
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daily_traffic_volume" />
+
+        <TextView
+            android:id="@+id/road_current_trafficnum_txt"
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/road_build_year" />
+
+        <TextView
+            android:id="@+id/road_current_buildyear_txt"
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/road_conservation_year" />
+
+        <TextView
+            android:id="@+id/road_current_conservationyear_txt"
+            style="@style/results_detall"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="详情"
+            android:layout_gravity="center_vertical|right"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/road_surface_condition" />
+
+        <TextView
+            android:id="@+id/road_current_surfaceconditon_txt"
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/road_data_year" />
+
+        <TextView
+            android:id="@+id/road_current_datayear_txt"
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/road_conservation_advise" />
+
+        <TextView
+            android:id="@+id/road_current_conservationadvise_txt"
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/results_detall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/road_start_station" />
+
+                <TextView
+                    android:id="@+id/road_current_startstation_txt"
+                    style="@style/results_detall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1322+98" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/road_current_indicator_name_txt"
+                    style="@style/results_detall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="损坏状况：PQI" />
+
+                <TextView
+                    android:id="@+id/road_current_indicator_num_txt"
+                    style="@style/results_detall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="43+e847" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/results_detall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tecnology_level" />
+
+                <TextView
+                    android:id="@+id/road_current_teclevel_txt"
+                    style="@style/results_detall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高速" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/results_detall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/car_road_num" />
+
+                <TextView
+                    android:id="@+id/road_current_carroad_num_txt"
+                    style="@style/results_detall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2车道" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/results_detall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/road_end_station" />
+
+                <TextView
+                    android:id="@+id/road_current_endstation_txt"
+                    style="@style/results_detall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1322+98" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible" >
+
+                <TextView
+                    style="@style/results_detall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slope_type" />
+
+                <TextView
+                    android:id="@+id/road_current_slopetype_txt"
+                    style="@style/results_detall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_feed_unit" />
+
+        <TextView
+            android:id="@+id/road_current_feedunit_txt"
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout> -->
+
+</LinearLayout>

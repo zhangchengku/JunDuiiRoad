@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iRoad</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- id -->
+    <item name="default_appoint_image" type="id"></item>
+    <!-- 公用 -->
+    <string name="statistic_info_txt">明细信息</string>
+    <string name="com_loading">正在努力加载，请稍后…</string>
+    <string name="com_network_wrong">网络不给力哟，请确认或切换网络</string>
+    <string name="prompt">提示</string>
+    <string name="login_id_hint">请输入账号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_login_btn">登       录</string>
+    <string name="login_remenber">记住用户名和密码</string>
+    <string name="set">设置</string>
+    <string name="update_system">系统更新</string>
+    <string name="search_hint">请输入路线、桥梁、隧道编码或名称</string>
+    <string name="search">搜索</string>
+    <string name="match_search_road">满足智能搜索结果的公路有</string>
+    <string name="pqi_">PQI&#160;&#160;&#160;&#160;:</string>
+    <string name="query_road_detail_path">途&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;径：</string>
+    <string name="block">&#160;&#160;&#160;&#160;</string>
+    <string name="traffic">交&#160;&#160;通 &#160;量：</string>
+    <string name="startstake">起点桩号：</string>
+    <string name="endstake">终点桩号：</string>
+    <string name="sum">总数：</string>
+    <string name="bt_confirm">确定</string>
+    <string name="sumkm">总&#160;&#160;里&#160;&#160;程：</string>
+    <string name="isnull">请输入手机号/密码。</string>
+    <string name="seacrch_is_null">请输入搜索关键字</string>
+    <string name="linkServerFail">连接服务器失败</string>
+    <string name="login_out">登录超时，请重新登录！</string>
+    <string name="setting_update_version_to">更新版本到</string>
+    <string name="defaultnotice">defaultNotice</string>
+    <string name="nearby">沿线信息</string>
+    <string name="road_indicator_scan">路况查询</string>
+    <string name="info">信息统计</string>
+    <string name="country">全国</string>
+    <string name="current_station">当前桩号：</string>
+    <string name="current_location">当前位置：</string>
+    <string name="current_feed_unit">管养单位：</string>
+    <string name="classification_statistic">分类统计</string>
+    <string name="fourfive_bridge">45类桥分布</string>
+    <string name="red_flag">红色标识</string>
+    <string name="no_data">无相关数据哦~</string>
+    <string name="server_wrong">亲，服务器未返回数据哦~</string>
+    <string name="road_basic">概况</string>
+    <string name="road_img">前方图像</string>
+    <string name="road_img_1">桥梁图片</string>
+    <string name="road_img_2">明细信息</string>
+    <string name="road_kpi">路况指标</string>
+    <string name="judge_total_num">评定总数：</string>
+    <string name="aver_indicator">平均路况：</string>
+    <string name="map_select">从地图选择</string>
+    <string name="tab_select">从列表选择</string>
+    <string name="map_select_notice">点击地图选择省市；长按1秒可选中路线，查看路况或实景(不再显示)</string>
+    <string name="map_road_pci_dialog">点击-选择省市，长按-选择路线\n点击路线上任意位置-查看路况与实景</string>
+    <!-- 底部按钮 -->
+    <string name="real_img">实景</string>
+    <string name="road_pci">路况</string>
+    <string name="query">查询</string>
+    <string name="road_count">统计</string>
+    <string name="gps">导航</string>
+    <string name="more">更多</string>
+
+    <!-- 城市列表 -->
+    <string name="lately_look_city">最近访问的省份</string>
+    <string name="all_city">所有省份</string>
+    <string name="dinwei_city">已定位省份</string>
+    <!-- 搜索页面 -->
+    <string name="bridge">桥梁</string>
+    <string name="tunnel">隧道</string>
+    <string name="service_area">服务区</string>
+    <string name="toll_gate">收费站</string>
+    <string name="gas_station">加油站</string>
+    <string name="maintenance_station">养护站</string>
+    <string name="construction_points">施工点</string>
+    <string name="disaster">灾毁</string>
+    <string name="video">视频</string>
+    <string name="other">其他</string>
+    <string name="on_the_line_please_look_forward_to">即将上线，敬请期待</string>
+    <string name="search_history">搜索历史</string>
+    <string name="empty">清空</string>
+    <!-- 服务区 -->
+    <string name="expressway_list_title">公路列表</string>
+    <string name="current_state">当前状态:</string>
+    <string name="service_content">服务内容:</string>
+    <string name="parking_space">可用停车位:</string>
+    <!-- 信息 -->
+    <string name="traffic_">路&#160;&#160;&#160;况</string>
+    <string name="statistics">统&#160;&#160;&#160;计</string>
+    <string name="index_type">指标类型</string>
+    <string name="traffic_search_hint">请输入搜索内容</string>
+    <string name="title_activity_statistics">StatisticsActivity</string>
+    <!-- 公路 -->
+    <string name="road_milis">评定里程：</string>
+    <string name="road_start_station">评定起点：</string>
+    <string name="road_end_station">评定终点：</string>
+    <string name="terrain_feature">地形特征：</string>
+    <string name="slope_type">边坡类型：</string>
+    <string name="tecnology_level">技术等级：</string>
+    <string name="road_width">路面宽度：</string>
+    <string name="car_road_num">车&#160;&#160;道&#160;&#160;数：</string>
+    <string name="road_type">路面类型：</string>
+    <string name="daily_traffic_volume">日交通量：</string>
+    <string name="road_build_year">修建年度：</string>
+    <string name="road_conservation_year">公路设施：</string>
+    <string name="road_surface_condition">路面状况：</string>
+    <string name="road_conservation_advise">养护建议：</string>
+    <string name="road_data_year">数据时间：</string>
+
+    <!-- 桥梁 -->
+    <string name="bridge_detail_name">桥梁名称：</string>
+    <string name="bridge_detail_level_type">桥梁分类：</string>
+    <string name="bridge_detail_position">桥梁位置：</string>
+    <string name="bridge_detail_type">桥梁类型：</string>
+    <string name="bridge_detail_length">桥梁长度：</string>
+    <string name="bridge_detail_width">最大跨径：</string>
+    <string name="bridge_detail_height">桥梁净高：</string>
+    <string name="bridge_detail_build_year">修建年限：</string>
+    <string name="bridge_detail_tec_level">技术等级：</string>
+    <string name="bridge_detail_weight">设计载荷等级：</string>
+    <string name="bridge_detail_level">通航等级：</string>
+    <string name="come_to">到这里去</string>
+    <string name="title_activity_city_list">CityList</string>
+    <string name="nullge">&#160;&#160;&#160;&#160;</string>
+    <string name="title_activity_bridge_search_info">BridgeSearchInfoActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- 桥梁明细信息 -->
+    <string name="bridge_info">桥梁信息</string>
+    <string name="bridge_name">桥梁名称</string>
+    <string name="tube_feed_unit">管养单位</string>
+    <string name="administrative_region">所在政区</string>
+    <string name="route">所属路线</string>
+    <string name="bridge_classification">桥梁分类</string>
+    <string name="bridge_type">桥梁类型</string>
+    <string name="bridge_position">桥梁位置</string>
+    <string name="bridge_length">桥梁长度</string>
+    <string name="bridge_height">桥梁净高</string>
+    <string name="repair_life">修理年限</string>
+    <string name="technical_level">技术等级</string>
+    <string name="evaluation_info">评定信息</string>
+    <string name="bci">桥梁技术状况指数(BCI)</string>
+    <string name="bci_level">桥梁技术状况评定等级</string>
+    <string name="evaluation_date">评定日期</string>
+    <string name="evaluation_method">评定方法</string>
+    <string name="last_testing">上次检测</string>
+    <string name="next_testing">下次检测</string>
+    <string name="evaluation_explain">评定说明</string>
+    <string name="disease_info">病害信息</string>
+    <string name="disease_category">病害类别</string>
+    <string name="part_of_the">所属部件</string>
+    <string name="defect_location">缺损位置</string>
+    <string name="where_component">所在构件</string>
+    <string name="disease_description">病害描述</string>
+    <string name="in_development">即将上线、敬请期待</string>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- custom light theme: -->
+    <color name="full_transparent">#01FFFFFF</color>
+    <color name="dialog_message_text">#333333</color>
+    <color name="dialog_title_text">#f3a71e</color>
+    <color name="dialog_title_separator">#f3a71e</color>
+    <color name="dialog_button_text">#333333</color>
+    <color name="dialog_button_normal">@android:color/transparent</color>
+    <color name="dialog_button_pressed">#99f3a71e</color>
+    <!-- 60 % opacity -->
+    <color name="dialog_button_focused">#4Cf3a71e</color>
+    <!-- 30 % opacity -->
+    <color name="dialog_button_separator">#25000000</color>
+    <!-- 7% opacity -->
+    <color name="background">#FFA500</color>
+    <!-- custom dark theme: -->
+    <color name="dialog_message_text_dark">#FFFFFF</color>
+    <color name="dialog_title_text_dark">#F8A500</color>
+    <color name="dialog_title_separator_dark">#F8A500</color>
+    <color name="dialog_button_text_dark">#000000</color>
+    <color name="dialog_button_normal_dark">@android:color/transparent</color>
+    <color name="dialog_button_pressed_dark">#99F8A500</color>
+    <!-- 60 % opacity -->
+    <color name="dialog_button_focused_dark">#4CF8A500</color>
+    <!-- 30 % opacity -->
+    <color name="dialog_button_separator_dark">#12FFFFFF</color>
+    <!-- 7% opacity -->
+    <color name="background_dark">#C35817</color>
+    <color name="transparent_background">#99000000</color>
+    <!-- 自定义color -->
+    <color name="base_top_color">#FF3385ff</color>
+    <color name="halving_line">#ffdedede</color>
+    <color name="road_heilight">#9932cd</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="blue">#64b8ff</color>
+    <color name="orange">#fd7801</color>
+    <color name="dark_orange">#d96602</color>
+    <color name="backgrand_gray">#f5f5f5</color>
+    <color name="transparency_orange">#a8fd7801</color>
+    <color name="transparency_write">#a8FFFFFF</color>
+    <color name="gray">#707070</color>
+    <color name="custom_gray">#cdcdcd</color>
+    <color name="dark_gray">#4d4d4d</color>
+    <color name="com_txt_main">#36afcd</color>
+    <color name="login_bg_blue_unclick">#25a9f1</color>
+    <color name="login_bg_blue_click">#059cd4</color>
+    <color name="zl_black_transparency">#3f000000</color>
+
+    <drawable name="com_list_item_white_bg_pressed">#fff5f5f5</drawable>
+    <drawable name="com_list_item_white_bg">#ffffffff</drawable>
+
+    <color name="halving_line_a">#F2F2F2</color>
+    <color name="hhe">#3f000000</color>
+    <color name="hhee">#7f000000</color>
+
+    <!-- 指标颜色 -->
+    <color name="indicator_green">#FF78E039</color>
+    <color name="indicator_blue">#FF61FBE7</color>
+    <color name="indicator_light_green">#FFE0EE73</color>
+    <color name="indicator_orange">#FFFFAA52</color>
+    <color name="indicator_red">#FFFA5402</color>
+    <color name="progress">#A9C7DF</color>
+    <color name="green">#6B8E23</color>
+    <color name="blue_new">#ff4f81ff</color>
+
+</resources>

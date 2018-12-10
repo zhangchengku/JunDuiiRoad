@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_sel"
+    android:orientation="horizontal"
+    android:paddingBottom="15dp"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp"
+    android:paddingTop="15dp" >
+
+    <TextView
+        android:id="@+id/tv_serch_highway_list_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_serch_highway_list_item_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textSize="14dp" />
+
+</LinearLayout>

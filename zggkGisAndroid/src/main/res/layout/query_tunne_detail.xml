@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/qurey_result_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/query_tunne_detail_tunneName"
+            style="@style/qurey_tunne_detail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="陕西隧道" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在路线：" />
+
+            <TextView
+                android:id="@+id/query_tunne_detail_road"
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中心桩号：" />
+
+            <TextView
+                android:id="@+id/query_tunne_detail_station"
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中心桩号：" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隧道长度：" />
+
+            <TextView
+                android:id="@+id/query_tunne_detail_tunnelength"
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隧道长度" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隧道净高：" />
+
+            <TextView
+                android:id="@+id/query_tunne_detail_heigh"
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隧道净高：" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评定等级：" />
+
+            <TextView
+                android:id="@+id/query_tunne_detail_grade"
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评定等级：" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

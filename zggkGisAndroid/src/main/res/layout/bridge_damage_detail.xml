@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bridge_damage_name"
+        style="@style/play_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="桥梁名称" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="桥   梁  全   长：" />
+
+        <TextView
+            android:id="@+id/bridge_damage_bridge_length"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="桥梁全长" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主跨最大跨径：" />
+
+        <TextView
+            android:id="@+id/bridge_damage_Bridge_max_span"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主跨最大跨径" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="桥   跨  组   合：" />
+
+        <TextView
+            android:id="@+id/bridge_damage_Bridge_span_group"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="桥跨组合" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="竣   工  年   月：" />
+
+        <TextView
+            android:id="@+id/bridge_damage_completed_monthy"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="竣工年月" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="末次评定时间：" />
+
+        <TextView
+            android:id="@+id/bridge_damage_last_evaluate_time"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="末次评定时间" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="末次评定等级：" />
+
+        <TextView
+            android:id="@+id/bridge_damage_last_evaluate_grade"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="末次评定等级" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="维   修  经   费：" />
+
+        <TextView
+            android:id="@+id/bridge_damage_last_evaluate_grade2"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="维修经费" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal">
+
+        <View
+            style="@style/play_view_color"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/play_dimen"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/play_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="病害信息" />
+
+        <View
+            style="@style/play_view_color"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/play_dimen"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bridge_damage_damage_text"
+        style="@style/play_valus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="病害信息" />
+
+</LinearLayout>

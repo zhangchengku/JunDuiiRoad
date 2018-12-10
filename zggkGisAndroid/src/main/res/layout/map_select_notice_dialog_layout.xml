@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#BB2874D3"
+    android:orientation="vertical"
+    android:padding="7dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="@string/map_road_pci_dialog"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="left"/>
+
+    <LinearLayout
+        android:id="@+id/ll_map_select_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_map_select_notice"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/com_xieyi_duigou_pressed" />
+
+        <TextView
+            android:id="@+id/tv_map_select_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:includeFontPadding="false"
+            android:text="不再显示"
+            android:textColor="#ff555555"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

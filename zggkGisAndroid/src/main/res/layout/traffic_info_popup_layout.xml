@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="@color/halving_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0.75dp"
+            android:layout_height="match_parent"
+            android:background="@color/halving_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_traffic_info_popup_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:gravity="center"
+                android:padding="5dp"
+                android:tag="0"
+                android:text="全部" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <TextView
+                android:id="@+id/tv_traffic_info_popup_qingkong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:gravity="center"
+                android:padding="5dp"
+                android:tag="6"
+                android:text="清空" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_traffic_info_popup_you"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:padding="5dp"
+                android:tag="1" >
+
+                <TextView
+                    android:id="@+id/tv_traffic_info_popup_you_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="优" />
+
+                <TextView
+                    android:id="@+id/tv_traffic_info_popup_you"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_traffic_info_popup_you_"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@+id/tv_traffic_info_popup_you_" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_traffic_info_popup_liang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:padding="5dp"
+                android:tag="2" >
+
+                <TextView
+                    android:id="@+id/tv_traffic_info_popup_liang_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="良" />
+
+                <TextView
+                    android:id="@+id/tv_traffic_info_popup_liang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_traffic_info_popup_liang_"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@+id/tv_traffic_info_popup_liang_" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_traffic_info_popup_zhong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:padding="5dp"
+                android:tag="3" >
+
+                <TextView
+                    android:id="@+id/tv_traffic_info_popup_zhong_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="中" />
+
+                <TextView
+                    android:id="@+id/tv_traffic_info_popup_zhong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_traffic_info_popup_zhong_"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@+id/tv_traffic_info_popup_zhong_" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_traffic_info_popup_ci"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:padding="5dp"
+                android:tag="4" >
+
+                <TextView
+                    android:id="@+id/tv_traffic_info_popup_ci_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="次" />
+
+                <TextView
+                    android:id="@+id/tv_traffic_info_popup_ci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_traffic_info_popup_ci_"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@+id/tv_traffic_info_popup_ci_" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_traffic_info_popup_ca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:padding="5dp"
+                android:tag="5" >
+
+                <TextView
+                    android:id="@+id/tv_traffic_info_popup_ca_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="差" />
+
+                <TextView
+                    android:id="@+id/tv_traffic_info_popup_ca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_traffic_info_popup_ca_"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@+id/tv_traffic_info_popup_ca_" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0.75dp"
+            android:layout_height="match_parent"
+            android:background="@color/halving_line" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="@color/halving_line" />
+
+</LinearLayout>

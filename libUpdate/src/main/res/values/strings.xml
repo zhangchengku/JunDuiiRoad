@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">libUpdate</string>
+    <string name="dialog_left_botton">取消</string>
+    <string name="dialog_right_botton">确定</string>
+
+</resources>

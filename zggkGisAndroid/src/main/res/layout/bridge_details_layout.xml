@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/qurey_result_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/query_bridge_detai_bridgename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="山西大桥"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:id="@+id/query_bridge_detai_imagebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/alert"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#EDEDED" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/seaech_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在路线："
+                android:textColor="#4c4c4c" />
+
+            <TextView
+                android:id="@+id/bridge_details_belong_road"
+                style="@style/seaech_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="G108"
+                android:textColor="#36afcd" />
+
+            <TextView
+                style="@style/seaech_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中心桩号："
+                android:textColor="#4c4c4c" />
+
+            <TextView
+                android:id="@+id/bridge_details_center_stake"
+                style="@style/seaech_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="G108"
+                android:textColor="#36afcd" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/seaech_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="桥梁长度："
+                android:textColor="#4c4c4c" />
+
+            <TextView
+                android:id="@+id/bridge_details_bridge_length"
+                style="@style/seaech_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="576.35"
+                android:textColor="#36afcd" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/seaech_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跨径分类："
+                android:textColor="#4c4c4c" />
+
+            <TextView
+                android:id="@+id/bridge_details_class"
+                style="@style/seaech_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="特大桥"
+                android:textColor="#4c4c4c" />
+
+            <TextView
+                style="@style/seaech_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="技术等级："
+                android:textColor="#4c4c4c" />
+
+            <TextView
+                android:id="@+id/bridge_details_technical_grade"
+                style="@style/seaech_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="一级"
+                android:textColor="#4c4c4c" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

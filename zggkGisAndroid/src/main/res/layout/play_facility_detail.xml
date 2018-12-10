@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/play_facility_location_route"
+        style="@style/play_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/play_dimen"
+        android:text="设施所在路线" />
+
+    <View
+        style="@style/play_view_color"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="@dimen/play_dimen" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前桩号：" />
+
+        <TextView
+            android:id="@+id/play_facility__current_station"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前桩号" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您目前位于" />
+
+        <TextView
+            android:id="@+id/play_facility__current_location"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前位置" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal" >
+
+        <View
+            style="@style/play_view_color"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/play_dimen"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/play_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="公路信息" />
+
+        <View
+            style="@style/play_view_color"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/play_dimen"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设  施  ID：" />
+
+        <TextView
+            android:id="@+id/play_facility__id"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设施 ID" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设施名称：" />
+
+        <TextView
+            android:id="@+id/play_facility_name"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设施名称" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设施编码：" />
+
+        <TextView
+            android:id="@+id/play_facility_code"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设施编码" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经        度：" />
+
+        <TextView
+            android:id="@+id/play_facility_longitude"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经     度" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纬        度：" />
+
+        <TextView
+            android:id="@+id/play_facility_latitude"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纬度" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/play_dimen"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/play_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中心桩号：" />
+
+        <TextView
+            android:id="@+id/play_facility_center_station"
+            style="@style/play_valus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中心桩号" />
+    </LinearLayout>
+
+</LinearLayout>

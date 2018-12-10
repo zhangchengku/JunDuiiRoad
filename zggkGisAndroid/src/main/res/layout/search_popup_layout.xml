@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:PullToRefresh="http://schemas.android.com/apk/res/com.mobo.zggkgisandroid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="0.75dp"
+        android:layout_height="match_parent"
+        android:background="@color/halving_line" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- <ListView
+            android:id="@+id/list_searth"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </ListView> -->
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_searth"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        PullToRefresh:mode="both"
+        android:scrollbars="none" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"
+            android:background="@color/halving_line" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="0.75dp"
+        android:layout_height="match_parent"
+        android:background="@color/halving_line" />
+
+</LinearLayout>

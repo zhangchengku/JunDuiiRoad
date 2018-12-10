@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="@color/halving_line" />
+
+    <RelativeLayout
+        android:id="@+id/map_statics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_sel"
+        android:padding="5dp"
+        android:tag="2" >
+
+        <TextView
+            android:id="@+id/map_statics_danwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/map_statics_duigou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/map_statics_danwei"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/map_statics_danwei" />
+    </RelativeLayout>
+
+</LinearLayout>

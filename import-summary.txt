@@ -1,0 +1,573 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From LibListViewRefersh:
+* pom.xml
+From LibLoading:
+* proguard.cfg
+From LibUpdate:
+* ic_launcher-web.png
+* proguard-project.txt
+From zggkGisAndroid:
+* .metadata\
+* .metadata\.lock
+* .metadata\.log
+* .metadata\.mylyn\
+* .metadata\.mylyn\.taskListIndex\
+* .metadata\.mylyn\.taskListIndex\segments.gen
+* .metadata\.mylyn\.taskListIndex\segments_1
+* .metadata\.mylyn\.tasks.xml.zip
+* .metadata\.mylyn\repositories.xml.zip
+* .metadata\.mylyn\tasks.xml.zip
+* .metadata\.plugins\
+* .metadata\.plugins\org.eclipse.cdt.core\
+* .metadata\.plugins\org.eclipse.cdt.core\.log
+* .metadata\.plugins\org.eclipse.cdt.make.core\
+* .metadata\.plugins\org.eclipse.cdt.make.core\specs.c
+* .metadata\.plugins\org.eclipse.cdt.make.core\specs.cpp
+* .metadata\.plugins\org.eclipse.core.resources\
+* .metadata\.plugins\org.eclipse.core.resources\.root\
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\history.version
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.index
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.version
+* .metadata\.plugins\org.eclipse.core.resources\.root\6.tree
+* .metadata\.plugins\org.eclipse.core.resources\.safetable\
+* .metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources
+* .metadata\.plugins\org.eclipse.core.runtime\
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.android.ide.eclipse.adt.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.cdt.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.core.resources.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.jdt.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.m2e.discovery.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.mylyn.context.core.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.mylyn.monitor.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.mylyn.tasks.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.team.cvs.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.team.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.ide.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.workbench.prefs
+* .metadata\.plugins\org.eclipse.e4.workbench\
+* .metadata\.plugins\org.eclipse.e4.workbench\workbench.xmi
+* .metadata\.plugins\org.eclipse.jdt.core\
+* .metadata\.plugins\org.eclipse.jdt.core\assumedExternalFilesCache
+* .metadata\.plugins\org.eclipse.jdt.core\externalFilesCache
+* .metadata\.plugins\org.eclipse.jdt.core\invalidArchivesCache
+* .metadata\.plugins\org.eclipse.jdt.core\nonChainingJarsCache
+* .metadata\.plugins\org.eclipse.jdt.core\variablesAndContainers.dat
+* .metadata\.plugins\org.eclipse.jdt.ui\
+* .metadata\.plugins\org.eclipse.jdt.ui\OpenTypeHistory.xml
+* .metadata\.plugins\org.eclipse.jdt.ui\QualifiedTypeNameHistory.xml
+* .metadata\.plugins\org.eclipse.jdt.ui\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.m2e.logback.configuration\
+* .metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+* .metadata\.plugins\org.eclipse.m2e.logback.configuration\logback.1.5.0.20140606-0033.xml
+* .metadata\.plugins\org.eclipse.ui.ide\
+* .metadata\.plugins\org.eclipse.ui.ide\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.ui.workbench\
+* .metadata\.plugins\org.eclipse.ui.workbench\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.ui.workbench\workingsets.xml
+* .metadata\version.ini
+* library\
+* library\AndroidLibrary_LibLoading\
+* library\AndroidLibrary_LibLoading\.git
+* library\AndroidLibrary_LibLoading\.gitignore
+* library\AndroidLibrary_LibLoading\LibLoading\
+* library\AndroidLibrary_LibLoading\LibLoading\.classpath
+* library\AndroidLibrary_LibLoading\LibLoading\.project
+* library\AndroidLibrary_LibLoading\LibLoading\.settings\
+* library\AndroidLibrary_LibLoading\LibLoading\.settings\org.eclipse.core.resources.prefs
+* library\AndroidLibrary_LibLoading\LibLoading\.settings\org.eclipse.jdt.core.prefs
+* library\AndroidLibrary_LibLoading\LibLoading\AndroidManifest.xml
+* library\AndroidLibrary_LibLoading\LibLoading\lint.xml
+* library\AndroidLibrary_LibLoading\LibLoading\proguard.cfg
+* library\AndroidLibrary_LibLoading\LibLoading\project.properties
+* library\AndroidLibrary_LibLoading\LibLoading\res\
+* library\AndroidLibrary_LibLoading\LibLoading\res\anim\
+* library\AndroidLibrary_LibLoading\LibLoading\res\anim\rotate_refresh.xml
+* library\AndroidLibrary_LibLoading\LibLoading\res\drawable-hdpi\
+* library\AndroidLibrary_LibLoading\LibLoading\res\drawable-hdpi\loading_dialog_back.png
+* library\AndroidLibrary_LibLoading\LibLoading\res\drawable-hdpi\loading_dismiss.png
+* library\AndroidLibrary_LibLoading\LibLoading\res\drawable-hdpi\loading_refresh.png
+* library\AndroidLibrary_LibLoading\LibLoading\res\drawable-mdpi\
+* library\AndroidLibrary_LibLoading\LibLoading\res\drawable-mdpi\ic_launcher.png
+* library\AndroidLibrary_LibLoading\LibLoading\res\layout\
+* library\AndroidLibrary_LibLoading\LibLoading\res\layout\main.xml
+* library\AndroidLibrary_LibLoading\LibLoading\res\layout\progress_dialog.xml
+* library\AndroidLibrary_LibLoading\LibLoading\res\values\
+* library\AndroidLibrary_LibLoading\LibLoading\res\values\color.xml
+* library\AndroidLibrary_LibLoading\LibLoading\res\values\strings.xml
+* library\AndroidLibrary_LibLoading\LibLoading\res\values\style.xml
+* library\AndroidLibrary_LibLoading\LibLoading\src\
+* library\AndroidLibrary_LibLoading\LibLoading\src\com\
+* library\AndroidLibrary_LibLoading\LibLoading\src\com\LibLoading\
+* library\AndroidLibrary_LibLoading\LibLoading\src\com\LibLoading\LibLoadingActivity.java
+* library\AndroidLibrary_LibLoading\LibLoading\src\com\LibLoading\LibThreadWithProgressDialog\
+* library\AndroidLibrary_LibLoading\LibLoading\src\com\LibLoading\LibThreadWithProgressDialog\ThreadWithProgressDialog.java
+* library\AndroidLibrary_LibLoading\LibLoading\src\com\LibLoading\LibThreadWithProgressDialog\ThreadWithProgressDialogTask.java
+* library\AndroidLibrary_LibLoading\LibLoading\src\com\LibLoading\LoadProgressDialog.java
+* library\AndroidLibrary_LibLoadings\
+* library\AndroidLibrary_LibLoadings\LibLoading\
+* library\AndroidLibrary_LibLoadings\LibLoading\.classpath
+* library\AndroidLibrary_LibLoadings\LibLoading\.project
+* library\AndroidLibrary_LibLoadings\LibLoading\.settings\
+* library\AndroidLibrary_LibLoadings\LibLoading\.settings\org.eclipse.core.resources.prefs
+* library\AndroidLibrary_LibLoadings\LibLoading\.settings\org.eclipse.jdt.core.prefs
+* library\AndroidLibrary_LibLoadings\LibLoading\AndroidManifest.xml
+* library\AndroidLibrary_LibLoadings\LibLoading\lint.xml
+* library\AndroidLibrary_LibLoadings\LibLoading\proguard.cfg
+* library\AndroidLibrary_LibLoadings\LibLoading\project.properties
+* library\AndroidLibrary_LibLoadings\LibLoading\res\
+* library\AndroidLibrary_LibLoadings\LibLoading\res\anim\
+* library\AndroidLibrary_LibLoadings\LibLoading\res\anim\rotate_refresh.xml
+* library\AndroidLibrary_LibLoadings\LibLoading\res\drawable-hdpi\
+* library\AndroidLibrary_LibLoadings\LibLoading\res\drawable-hdpi\loading_dialog_back.png
+* library\AndroidLibrary_LibLoadings\LibLoading\res\drawable-hdpi\loading_dismiss.png
+* library\AndroidLibrary_LibLoadings\LibLoading\res\drawable-hdpi\loading_refresh.png
+* library\AndroidLibrary_LibLoadings\LibLoading\res\drawable-mdpi\
+* library\AndroidLibrary_LibLoadings\LibLoading\res\drawable-mdpi\ic_launcher.png
+* library\AndroidLibrary_LibLoadings\LibLoading\res\layout\
+* library\AndroidLibrary_LibLoadings\LibLoading\res\layout\main.xml
+* library\AndroidLibrary_LibLoadings\LibLoading\res\layout\progress_dialog.xml
+* library\AndroidLibrary_LibLoadings\LibLoading\res\values\
+* library\AndroidLibrary_LibLoadings\LibLoading\res\values\color.xml
+* library\AndroidLibrary_LibLoadings\LibLoading\res\values\strings.xml
+* library\AndroidLibrary_LibLoadings\LibLoading\res\values\style.xml
+* library\AndroidLibrary_LibLoadings\LibLoading\src\
+* library\AndroidLibrary_LibLoadings\LibLoading\src\com\
+* library\AndroidLibrary_LibLoadings\LibLoading\src\com\LibLoading\
+* library\AndroidLibrary_LibLoadings\LibLoading\src\com\LibLoading\LibLoadingActivity.java
+* library\AndroidLibrary_LibLoadings\LibLoading\src\com\LibLoading\LibThreadWithProgressDialog\
+* library\AndroidLibrary_LibLoadings\LibLoading\src\com\LibLoading\LibThreadWithProgressDialog\ThreadWithProgressDialog.java
+* library\AndroidLibrary_LibLoadings\LibLoading\src\com\LibLoading\LibThreadWithProgressDialog\ThreadWithProgressDialogTask.java
+* library\AndroidLibrary_LibLoadings\LibLoading\src\com\LibLoading\LoadProgressDialog.java
+* library\AndroidLibrary_LibStyledDialog\
+* library\AndroidLibrary_LibStyledDialog\.git
+* library\AndroidLibrary_LibStyledDialog\.gitignore
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\.classpath
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\.project
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\.settings\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\.settings\org.eclipse.core.resources.prefs
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\.settings\org.eclipse.jdt.core.prefs
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\AndroidManifest.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\libs\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\libs\android-support-v4.jar
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\lint.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\project.properties
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\color\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\color\sdl_primary_text_holo_dark.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\color\sdl_primary_text_holo_light.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\drawable-hdpi\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\drawable-hdpi\sdl_background_dark.9.png
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\drawable-hdpi\sdl_background_light.9.png
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\drawable-mdpi\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\drawable-mdpi\sdl_background_dark.9.png
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\drawable-mdpi\sdl_background_light.9.png
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\drawable-xhdpi\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\drawable-xhdpi\sdl_background_dark.9.png
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\drawable-xhdpi\sdl_background_light.9.png
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\layout\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\layout\dialog_part_button.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\layout\dialog_part_button_panel.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\layout\dialog_part_button_separator.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\layout\dialog_part_custom.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\layout\dialog_part_datepicker.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\layout\dialog_part_list.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\layout\dialog_part_message.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\layout\dialog_part_progress.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\layout\dialog_part_title.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\layout\item_list.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\values\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\values\sdl__attrs.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\values\sdl__colors.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\values\sdl__dimens.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\values\sdl__ids.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\values\sdl__strings.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\values\sdl__theme.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\res\values\styles.xml
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\inmite\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\inmite\android\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\inmite\android\lib\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\inmite\android\lib\dialogs\
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\inmite\android\lib\dialogs\BaseDialogBuilder.java
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\inmite\android\lib\dialogs\BaseDialogFragment.java
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\inmite\android\lib\dialogs\FavoriteCharacterDialogFragment.java
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\inmite\android\lib\dialogs\IFavoriteCharacterDialogListener.java
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\inmite\android\lib\dialogs\ISimpleDialogCancelListener.java
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\inmite\android\lib\dialogs\ISimpleDialogListener.java
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\inmite\android\lib\dialogs\ProgressDialogFragment.java
+* library\AndroidLibrary_LibStyledDialog\LibStyledDialogs\src\eu\inmite\android\lib\dialogs\SimpleDialogFragment.java
+* library\AndroidLibrary_LibUpdate\
+* library\AndroidLibrary_LibUpdate\.git
+* library\AndroidLibrary_LibUpdate\.gitignore
+* library\AndroidLibrary_LibUpdate\LibUpdate\
+* library\AndroidLibrary_LibUpdate\LibUpdate\.classpath
+* library\AndroidLibrary_LibUpdate\LibUpdate\.project
+* library\AndroidLibrary_LibUpdate\LibUpdate\.settings\
+* library\AndroidLibrary_LibUpdate\LibUpdate\.settings\org.eclipse.core.resources.prefs
+* library\AndroidLibrary_LibUpdate\LibUpdate\.settings\org.eclipse.jdt.core.prefs
+* library\AndroidLibrary_LibUpdate\LibUpdate\AndroidManifest.xml
+* library\AndroidLibrary_LibUpdate\LibUpdate\ic_launcher-web.png
+* library\AndroidLibrary_LibUpdate\LibUpdate\lint.xml
+* library\AndroidLibrary_LibUpdate\LibUpdate\proguard-project.txt
+* library\AndroidLibrary_LibUpdate\LibUpdate\project.properties
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\drawable-hdpi\
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\drawable-hdpi\dialog_back.png
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\drawable-hdpi\dialog_hline.png
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\drawable-hdpi\dialog_vline.png
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\drawable-hdpi\ic_launcher.png
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\drawable-ldpi\
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\drawable-ldpi\ic_launcher.png
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\drawable-mdpi\
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\drawable-mdpi\ic_launcher.png
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\layout\
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\layout\dialog.xml
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\menu\
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\menu\activity_test.xml
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\values-1184x720\
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\values-1184x720\dimen.xml
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\values-800x480\
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\values-800x480\dimen.xml
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\values\
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\values\color.xml
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\values\dimen.xml
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\values\strings.xml
+* library\AndroidLibrary_LibUpdate\LibUpdate\res\values\styles.xml
+* library\AndroidLibrary_LibUpdate\LibUpdate\src\
+* library\AndroidLibrary_LibUpdate\LibUpdate\src\com\
+* library\AndroidLibrary_LibUpdate\LibUpdate\src\com\mobo\
+* library\AndroidLibrary_LibUpdate\LibUpdate\src\com\mobo\libupdate\
+* library\AndroidLibrary_LibUpdate\LibUpdate\src\com\mobo\libupdate\AddViewActivity.java
+* library\AndroidLibrary_LibUpdate\LibUpdate\src\com\mobo\libupdate\LibAutoUpdate.java
+* library\AndroidLibrary_LibUpdate\LibUpdate\src\com\mobo\libupdate\dialog\
+* library\AndroidLibrary_LibUpdate\LibUpdate\src\com\mobo\libupdate\dialog\DefaultDialog.java
+* library\AndroidLibrary_LibUpdate\LibUpdate\src\com\mobo\libupdate\util\
+* library\AndroidLibrary_LibUpdate\LibUpdate\src\com\mobo\libupdate\util\Util.java
+* library\LibListView\
+* library\LibListView\.classpath
+* library\LibListView\.project
+* library\LibListView\.settings\
+* library\LibListView\.settings\org.eclipse.core.resources.prefs
+* library\LibListView\.settings\org.eclipse.jdt.core.prefs
+* library\LibListView\AndroidManifest.xml
+* library\LibListView\lint.xml
+* library\LibListView\pom.xml
+* library\LibListView\project.properties
+* library\LibListView\res\
+* library\LibListView\res\drawable-hdpi\
+* library\LibListView\res\drawable-hdpi\pulltorefresh_down_arrow.png
+* library\LibListView\res\drawable-hdpi\pulltorefresh_up_arrow.png
+* library\LibListView\res\drawable-ldpi\
+* library\LibListView\res\drawable-ldpi\pulltorefresh_down_arrow.png
+* library\LibListView\res\drawable-ldpi\pulltorefresh_up_arrow.png
+* library\LibListView\res\drawable-mdpi\
+* library\LibListView\res\drawable-mdpi\pulltorefresh_down_arrow.png
+* library\LibListView\res\drawable-mdpi\pulltorefresh_up_arrow.png
+* library\LibListView\res\layout\
+* library\LibListView\res\layout\pull_to_refresh_header.xml
+* library\LibListView\res\values\
+* library\LibListView\res\values\attrs.xml
+* library\LibListView\res\values\ids.xml
+* library\LibListView\res\values\pull_refresh_strings.xml
+* library\LibListView\src\
+* library\LibListView\src\com\
+* library\LibListView\src\com\handmark\
+* library\LibListView\src\com\handmark\pulltorefresh\
+* library\LibListView\src\com\handmark\pulltorefresh\library\
+* library\LibListView\src\com\handmark\pulltorefresh\library\PullToRefreshAdapterViewBase.java
+* library\LibListView\src\com\handmark\pulltorefresh\library\PullToRefreshBase.java
+* library\LibListView\src\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView.java
+* library\LibListView\src\com\handmark\pulltorefresh\library\PullToRefreshGridView.java
+* library\LibListView\src\com\handmark\pulltorefresh\library\PullToRefreshListView.java
+* library\LibListView\src\com\handmark\pulltorefresh\library\PullToRefreshWebView.java
+* library\LibListView\src\com\handmark\pulltorefresh\library\internal\
+* library\LibListView\src\com\handmark\pulltorefresh\library\internal\EmptyViewMethodAccessor.java
+* library\LibListView\src\com\handmark\pulltorefresh\library\internal\LoadingLayout.java
+* library\XCL-Charts\
+* library\XCL-Charts\.classpath
+* library\XCL-Charts\.project
+* library\XCL-Charts\.settings\
+* library\XCL-Charts\.settings\org.eclipse.core.resources.prefs
+* library\XCL-Charts\.settings\org.eclipse.jdt.core.prefs
+* library\XCL-Charts\AndroidManifest.xml
+* library\XCL-Charts\ic_launcher-web.png
+* library\XCL-Charts\lint.xml
+* library\XCL-Charts\proguard-project.txt
+* library\XCL-Charts\project.properties
+* library\XCL-Charts\res\
+* library\XCL-Charts\res\drawable-hdpi\
+* library\XCL-Charts\res\drawable-hdpi\ic_launcher.png
+* library\XCL-Charts\res\drawable-mdpi\
+* library\XCL-Charts\res\drawable-mdpi\ic_launcher.png
+* library\XCL-Charts\res\drawable-xhdpi\
+* library\XCL-Charts\res\drawable-xhdpi\ic_launcher.png
+* library\XCL-Charts\res\drawable-xxhdpi\
+* library\XCL-Charts\res\drawable-xxhdpi\ic_launcher.png
+* library\XCL-Charts\res\values-v11\
+* library\XCL-Charts\res\values-v11\styles.xml
+* library\XCL-Charts\res\values-v14\
+* library\XCL-Charts\res\values-v14\styles.xml
+* library\XCL-Charts\res\values\
+* library\XCL-Charts\res\values\strings.xml
+* library\XCL-Charts\res\values\styles.xml
+* library\XCL-Charts\src\
+* library\XCL-Charts\src\org\
+* library\XCL-Charts\src\org\xclcharts\
+* library\XCL-Charts\src\org\xclcharts\chart\
+* library\XCL-Charts\src\org\xclcharts\chart\ArcLineChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\ArcLineData.java
+* library\XCL-Charts\src\org\xclcharts\chart\AreaChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\AreaData.java
+* library\XCL-Charts\src\org\xclcharts\chart\BarChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\BarChart3D.java
+* library\XCL-Charts\src\org\xclcharts\chart\BarData.java
+* library\XCL-Charts\src\org\xclcharts\chart\BubbleChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\BubbleData.java
+* library\XCL-Charts\src\org\xclcharts\chart\CircleChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\CustomLineData.java
+* library\XCL-Charts\src\org\xclcharts\chart\DialChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\DountChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\Funnel2Data.java
+* library\XCL-Charts\src\org\xclcharts\chart\FunnelChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\FunnelChart2.java
+* library\XCL-Charts\src\org\xclcharts\chart\FunnelData.java
+* library\XCL-Charts\src\org\xclcharts\chart\GaugeChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\LineChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\LineData.java
+* library\XCL-Charts\src\org\xclcharts\chart\LnData.java
+* library\XCL-Charts\src\org\xclcharts\chart\PieChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\PieChart3D.java
+* library\XCL-Charts\src\org\xclcharts\chart\PieData.java
+* library\XCL-Charts\src\org\xclcharts\chart\PointD.java
+* library\XCL-Charts\src\org\xclcharts\chart\RadarChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\RadarData.java
+* library\XCL-Charts\src\org\xclcharts\chart\RangeBarChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\RangeBarData.java
+* library\XCL-Charts\src\org\xclcharts\chart\RoseChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\ScatterChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\ScatterData.java
+* library\XCL-Charts\src\org\xclcharts\chart\SplineChart.java
+* library\XCL-Charts\src\org\xclcharts\chart\SplineData.java
+* library\XCL-Charts\src\org\xclcharts\chart\StackBarChart.java
+* library\XCL-Charts\src\org\xclcharts\common\
+* library\XCL-Charts\src\org\xclcharts\common\CurveHelper.java
+* library\XCL-Charts\src\org\xclcharts\common\DensityUtil.java
+* library\XCL-Charts\src\org\xclcharts\common\DrawHelper.java
+* library\XCL-Charts\src\org\xclcharts\common\IFormatterDoubleCallBack.java
+* library\XCL-Charts\src\org\xclcharts\common\IFormatterTextCallBack.java
+* library\XCL-Charts\src\org\xclcharts\common\MathHelper.java
+* library\XCL-Charts\src\org\xclcharts\common\PointHelper.java
+* library\XCL-Charts\src\org\xclcharts\common\SysinfoHelper.java
+* library\XCL-Charts\src\org\xclcharts\event\
+* library\XCL-Charts\src\org\xclcharts\event\click\
+* library\XCL-Charts\src\org\xclcharts\event\click\ArcPosition.java
+* library\XCL-Charts\src\org\xclcharts\event\click\BarPosition.java
+* library\XCL-Charts\src\org\xclcharts\event\click\ChartArcListener.java
+* library\XCL-Charts\src\org\xclcharts\event\click\ChartBarListener.java
+* library\XCL-Charts\src\org\xclcharts\event\click\ChartPointListener.java
+* library\XCL-Charts\src\org\xclcharts\event\click\PlotArcPosition.java
+* library\XCL-Charts\src\org\xclcharts\event\click\PlotBarPosition.java
+* library\XCL-Charts\src\org\xclcharts\event\click\PlotPointPosition.java
+* library\XCL-Charts\src\org\xclcharts\event\click\PointPosition.java
+* library\XCL-Charts\src\org\xclcharts\event\click\PositionListener.java
+* library\XCL-Charts\src\org\xclcharts\event\click\PositionRecord.java
+* library\XCL-Charts\src\org\xclcharts\event\click\RectPosition.java
+* library\XCL-Charts\src\org\xclcharts\event\touch\
+* library\XCL-Charts\src\org\xclcharts\event\touch\ChartTouch.java
+* library\XCL-Charts\src\org\xclcharts\event\touch\IChartTouch.java
+* library\XCL-Charts\src\org\xclcharts\renderer\
+* library\XCL-Charts\src\org\xclcharts\renderer\AxesChart.java
+* library\XCL-Charts\src\org\xclcharts\renderer\CirChart.java
+* library\XCL-Charts\src\org\xclcharts\renderer\EventChart.java
+* library\XCL-Charts\src\org\xclcharts\renderer\IRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\LnChart.java
+* library\XCL-Charts\src\org\xclcharts\renderer\RdChart.java
+* library\XCL-Charts\src\org\xclcharts\renderer\XChart.java
+* library\XCL-Charts\src\org\xclcharts\renderer\XEnum.java
+* library\XCL-Charts\src\org\xclcharts\renderer\axis\
+* library\XCL-Charts\src\org\xclcharts\renderer\axis\Axis.java
+* library\XCL-Charts\src\org\xclcharts\renderer\axis\CategoryAxis.java
+* library\XCL-Charts\src\org\xclcharts\renderer\axis\CategoryAxisRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\axis\DataAxis.java
+* library\XCL-Charts\src\org\xclcharts\renderer\axis\DataAxisRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\axis\RoundAxis.java
+* library\XCL-Charts\src\org\xclcharts\renderer\axis\RoundAxisRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\axis\XYAxis.java
+* library\XCL-Charts\src\org\xclcharts\renderer\bar\
+* library\XCL-Charts\src\org\xclcharts\renderer\bar\Bar.java
+* library\XCL-Charts\src\org\xclcharts\renderer\bar\Bar3D.java
+* library\XCL-Charts\src\org\xclcharts\renderer\bar\FlatBar.java
+* library\XCL-Charts\src\org\xclcharts\renderer\info\
+* library\XCL-Charts\src\org\xclcharts\renderer\info\AnchorDataPoint.java
+* library\XCL-Charts\src\org\xclcharts\renderer\info\AnchorRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\info\DyInfo.java
+* library\XCL-Charts\src\org\xclcharts\renderer\info\DyLine.java
+* library\XCL-Charts\src\org\xclcharts\renderer\info\DyLineRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\info\Legend.java
+* library\XCL-Charts\src\org\xclcharts\renderer\info\LegendRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\info\PlotArcLabelInfo.java
+* library\XCL-Charts\src\org\xclcharts\renderer\info\PlotAxisTick.java
+* library\XCL-Charts\src\org\xclcharts\renderer\info\PlotDataInfo.java
+* library\XCL-Charts\src\org\xclcharts\renderer\info\ToolTip.java
+* library\XCL-Charts\src\org\xclcharts\renderer\info\ToolTipRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\line\
+* library\XCL-Charts\src\org\xclcharts\renderer\line\DotInfo.java
+* library\XCL-Charts\src\org\xclcharts\renderer\line\PlotCustomLine.java
+* library\XCL-Charts\src\org\xclcharts\renderer\line\PlotDot.java
+* library\XCL-Charts\src\org\xclcharts\renderer\line\PlotDotRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\line\PlotLine.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\AxisTitle.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\AxisTitleRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\Border.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\BorderRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\LabelBrokenLine.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\LabelBrokenLineRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotArea.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotAreaRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotAttrInfo.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotAttrInfoRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotGrid.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotGridRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotLabel.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotLabelRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotLegend.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotLegendRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotQuadrant.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotQuadrantRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotTitle.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PlotTitleRender.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\Pointer.java
+* library\XCL-Charts\src\org\xclcharts\renderer\plot\PointerRender.java
+* library\XCL-Charts\src\org\xclcharts\view\
+* library\XCL-Charts\src\org\xclcharts\view\ChartView.java
+* library\XCL-Charts\src\org\xclcharts\view\GraphicalView.java
+* proguard-project.txt
+From zggk_XCL-Charts:
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In LibListViewRefersh:
+* AndroidManifest.xml => libListViewRefersh\src\main\AndroidManifest.xml
+* assets\ => libListViewRefersh\src\main\assets
+* lint.xml => libListViewRefersh\lint.xml
+* res\ => libListViewRefersh\src\main\res\
+* src\ => libListViewRefersh\src\main\java\
+In LibLoading:
+* AndroidManifest.xml => libLoading\src\main\AndroidManifest.xml
+* assets\ => libLoading\src\main\assets
+* lint.xml => libLoading\lint.xml
+* res\ => libLoading\src\main\res\
+* src\ => libLoading\src\main\java\
+In LibStyledDialogs:
+* AndroidManifest.xml => libStyledDialogs\src\main\AndroidManifest.xml
+* assets\ => libStyledDialogs\src\main\assets
+* lint.xml => libStyledDialogs\lint.xml
+* res\ => libStyledDialogs\src\main\res\
+* src\ => libStyledDialogs\src\main\java\
+In LibUpdate:
+* AndroidManifest.xml => libUpdate\src\main\AndroidManifest.xml
+* assets\ => libUpdate\src\main\assets
+* lint.xml => libUpdate\lint.xml
+* res\ => libUpdate\src\main\res\
+* src\ => libUpdate\src\main\java\
+In zggk_XCL-Charts:
+* AndroidManifest.xml => zggk_XCLCharts\src\main\AndroidManifest.xml
+* assets\ => zggk_XCLCharts\src\main\assets
+* lint.xml => zggk_XCLCharts\lint.xml
+* res\ => zggk_XCLCharts\src\main\res\
+* src\ => zggk_XCLCharts\src\main\java\
+In zggkGisAndroid:
+* AndroidManifest.xml => zggkGisAndroid\src\main\AndroidManifest.xml
+* assets\ => zggkGisAndroid\src\main\assets
+* libs\androidCommon.0707.jar => zggkGisAndroid\libs\androidCommon.0707.jar
+* libs\arcgis-android-api.jar => zggkGisAndroid\libs\arcgis-android-api.jar
+* libs\arcgis-android-app-toolkit.jar => zggkGisAndroid\libs\arcgis-android-app-toolkit.jar
+* libs\armeabi-v7a\librender_script_analysis.so => zggkGisAndroid\src\main\jniLibs\armeabi-v7a\librender_script_analysis.so
+* libs\armeabi-v7a\librs.main.so => zggkGisAndroid\src\main\jniLibs\armeabi-v7a\librs.main.so
+* libs\armeabi-v7a\libruntimecore_java.so => zggkGisAndroid\src\main\jniLibs\armeabi-v7a\libruntimecore_java.so
+* libs\armeabi\librender_script_analysis.so => zggkGisAndroid\src\main\jniLibs\armeabi\librender_script_analysis.so
+* libs\armeabi\librs.main.so => zggkGisAndroid\src\main\jniLibs\armeabi\librs.main.so
+* libs\armeabi\libruntimecore_java.so => zggkGisAndroid\src\main\jniLibs\armeabi\libruntimecore_java.so
+* libs\jackson-core-1.9.5.jar => zggkGisAndroid\libs\jackson-core-1.9.5.jar
+* libs\jackson-mapper-1.9.5.jar => zggkGisAndroid\libs\jackson-mapper-1.9.5.jar
+* libs\jcifs-1.3.17.jar => zggkGisAndroid\libs\jcifs-1.3.17.jar
+* libs\libUtil2.2.jar => zggkGisAndroid\libs\libUtil2.2.jar
+* libs\okhttp-2.7.5.jar => zggkGisAndroid\libs\okhttp-2.7.5.jar
+* libs\okio-1.9.0.jar => zggkGisAndroid\libs\okio-1.9.0.jar
+* libs\ormlite-android-4.43.jar => zggkGisAndroid\libs\ormlite-android-4.43.jar
+* libs\ormlite-core-4.43.jar => zggkGisAndroid\libs\ormlite-core-4.43.jar
+* libs\Toolkit.jar => zggkGisAndroid\libs\Toolkit.jar
+* libs\x86\librender_script_analysis.so => zggkGisAndroid\src\main\jniLibs\x86\librender_script_analysis.so
+* libs\x86\librs.main.so => zggkGisAndroid\src\main\jniLibs\x86\librs.main.so
+* libs\x86\libruntimecore_java.so => zggkGisAndroid\src\main\jniLibs\x86\libruntimecore_java.so
+* lint.xml => zggkGisAndroid\lint.xml
+* res\ => zggkGisAndroid\src\main\res\
+* src\ => zggkGisAndroid\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

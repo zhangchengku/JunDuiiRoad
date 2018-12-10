@@ -1,0 +1,566 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame">
+
+    <com.esri.android.map.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"></com.esri.android.map.MapView>
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/search_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/search_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search_back"
+                android:scaleType="matrix" />
+
+            <View
+                android:id="@+id/search_black_view"
+                android:layout_width="2dp"
+                android:layout_height="38dp"
+                android:background="#F7F7F7" />
+
+            <TextView
+                android:id="@+id/province_choices_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/country"
+                android:textColor="#b2b2b2"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/search_black_view_two"
+                android:layout_width="2dp"
+                android:layout_height="38dp"
+                android:background="#F7F7F7" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search_icon"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/search_edit_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="true"
+                android:completionThreshold="1"
+                android:dropDownWidth="240dp"
+                android:dropDownHeight="250dp"
+                android:fadingEdge="none"
+                android:hint="@string/search_hint"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:scrollbars="none"
+                android:singleLine="true"
+                android:textColorHint="#B2B2B2"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/search"
+            android:text="@string/search"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/road_info_ib"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/search_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/road_info_sel"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/road_skill_kpi"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/road_info_ib"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/road_kpi_sel"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/play_image_begin"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/road_skill_kpi"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/play_image_begin"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/forward_station_ibt"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/play_image_begin"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#00000000"
+        android:padding="8dp"
+        android:scaleType="center"
+        android:src="@drawable/huis_up" />
+
+    <ImageButton
+        android:id="@+id/next_station_ibt"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/forward_station_ibt"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#00000000"
+        android:padding="8dp"
+        android:scaleType="center"
+        android:src="@drawable/huis_down" />
+
+    <LinearLayout
+        android:id="@+id/zoom_container_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/search_result_container"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="45dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/zoom_min_tv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/zoom_min_selector"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/zoom_out_tv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/zoom_out_selector"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_scroll_dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            layout="@layout/silde_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_road_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/bottom_basic_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_choice_selector"
+            android:clickable="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/nearby_img"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/road_basic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_pci_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_choice_selector"
+            android:clickable="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/road_pci"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/road_pci" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_count_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_choice_selector"
+            android:clickable="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/classfy_statistic"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/road_count" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <!--
+        <LinearLayout
+            android:id="@+id/bottom_img_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_choice_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/road_img"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="@string/real_img" />
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:id="@+id/bottom_nearby_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_choice_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/nearby_img"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/nearby" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_road_indicator_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_choice_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/road_pci"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/road_pci" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_search_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_choice_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/search_img"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/query" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_info_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_choice_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/info_img"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/road_count" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_gps_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_choice_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/gps_img"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="@string/more" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bridge_dialog"
+        layout="@layout/bottom_bridge_img_dialog"
+        android:layout_above="@+id/bottom_road_imgKpi_container"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bottom_road_imgKpi_container"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/halving_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/bottom_road_left_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_choice_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="@string/road_img_1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/halving_line" />
+
+            <LinearLayout
+                android:id="@+id/bottom_road_img_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_choice_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="@string/road_img_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.75dp"
+                android:layout_height="match_parent"
+                android:background="#2b2b2b" />
+
+            <LinearLayout
+                android:id="@+id/bottom_road_pci_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_choice_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/type_change_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/road_pci"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="@string/come_to" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/search_see_detail"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_above="@id/bottom_info_container"
+        android:background="@drawable/search_see_detail"
+        android:gravity="center"
+        android:text="详细信息>>"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/search_result_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_info_container"
+        android:orientation="vertical"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/search_bubble"
+        android:layout_width="35dp"
+        android:layout_height="35sp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bubble"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/search_thumb_img"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_above="@id/search_bubble"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/default_thumb"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bottom_large_img_container"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/bottom_large_img_layout_ic"
+            layout="@layout/bottom_large_img_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_statistic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/bottom_statistic_layout"
+            layout="@layout/bottom_statistic_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "com.mobo.zggkgisandroid"
+        minSdkVersion 16
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/LGPL2.1'
+    }
+}
+
+dependencies {
+    implementation project(':zggk_XCLCharts')
+    implementation project(':libUpdate')
+    implementation project(':libStyledDialogs')
+    implementation project(':libListViewRefersh')
+    implementation project(':libLoading')
+    implementation 'com.android.support:support-v4:19.1.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation files('libs/androidCommon.0707.jar')
+    implementation files('libs/arcgis-android-api.jar')
+    implementation files('libs/arcgis-android-app-toolkit.jar')
+    implementation files('libs/jackson-core-1.9.5.jar')
+    implementation files('libs/jackson-mapper-1.9.5.jar')
+    implementation files('libs/jcifs-1.3.17.jar')
+    implementation files('libs/libUtil2.2.jar')
+    implementation files('libs/okhttp-2.7.5.jar')
+    implementation files('libs/okio-1.9.0.jar')
+    implementation files('libs/ormlite-android-4.43.jar')
+    implementation files('libs/ormlite-core-4.43.jar')
+    implementation files('libs/Toolkit.jar')
+}

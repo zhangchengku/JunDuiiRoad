@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_assessment_list_index"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textColor="#ff333333"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv_assessment_list_index_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:layout_weight="2.5"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textColor="#ff333333"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv_assessment_list_exponential"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:includeFontPadding="false"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textColor="#ff333333"
+        android:textSize="13dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_assessment_list_level"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/img_assessment_list_level_grade"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_assessment_list_level_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="#ff333333"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+</LinearLayout>

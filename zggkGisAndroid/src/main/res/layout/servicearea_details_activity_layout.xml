@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_servicearea_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <LinearLayout
+                android:id="@+id/layout_servicearea_details_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/com_dianhua_icon" />
+
+                <TextView
+                    android:id="@+id/tv_servicearea_details_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="#ff333333"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/arrows_right" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <LinearLayout
+                android:id="@+id/layout_servicearea_details_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/com_dingwei_icon" />
+
+                <TextView
+                    android:id="@+id/tv_servicearea_details_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="#ff333333"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/halving_line" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <LinearLayout
+                android:id="@+id/layout_servicearea_details_current_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:orientation="horizontal"
+                android:paddingBottom="9dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="9dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/current_state"
+                    android:textColor="#ff333333"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_servicearea_details_current_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="#ffcc00"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <LinearLayout
+                android:id="@+id/layout_servicearea_details_service_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:orientation="horizontal"
+                android:paddingBottom="9dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="9dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/service_content"
+                    android:textColor="#ff333333"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:orientation="horizontal"
+                android:paddingBottom="9dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="9dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/parking_space"
+                    android:textColor="#ff333333"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/layout_servicearea_details_k_parking_space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="#ffcc00"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/layout_servicearea_details_g_parking_space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textColor="#ff333333"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/halving_line" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <LinearLayout
+                android:id="@+id/layout_servicearea_details_service_content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_sel"
+                android:orientation="horizontal"
+                android:paddingBottom="9dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="9dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="简介"
+                    android:textColor="#ff333333"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <TextView
+                android:id="@+id/tv_servicearea_details_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:includeFontPadding="false"
+                android:paddingBottom="9dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="9dp"
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

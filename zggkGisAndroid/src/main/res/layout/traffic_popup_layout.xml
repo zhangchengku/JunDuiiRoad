@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/traffic_top_right_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_traffic_popup_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_sel"
+        android:includeFontPadding="false"
+        android:paddingBottom="10dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingTop="10dp"
+        android:text="@string/bt_confirm"
+        android:textColor="@color/dialog_message_text"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/img_ab_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="0.75dp"
+        android:layout_alignLeft="@+id/tv_traffic_popup_confirm"
+        android:layout_alignRight="@+id/tv_traffic_popup_confirm"
+        android:layout_below="@+id/tv_traffic_popup_confirm"
+        android:background="@color/halving_line" />
+
+    <TextView
+        android:id="@+id/tv_traffic_popup_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_traffic_popup_confirm"
+        android:layout_alignRight="@+id/tv_traffic_popup_confirm"
+        android:layout_below="@+id/img_ab_popup"
+        android:background="@drawable/list_item_sel"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingBottom="10dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingTop="10dp"
+        android:text="@string/empty"
+        android:textColor="@color/dialog_message_text"
+        android:textSize="16dp" />
+
+</RelativeLayout>

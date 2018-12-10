@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.mobo.zggkgisandroid.View.BarChart03View
+        android:id="@+id/statistics_layout_child_two_bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="@color/halving_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                   
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_assessment_index"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#4f81ff"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="指标"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_assessment_index_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="2.5"
+                        android:background="#4f81ff"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="指标名称"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_assessment_exponential"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="#4f81ff"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="指数"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_assessment_level"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1.3"
+                        android:background="#4f81ff"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="路况等级"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <com.mobo.zggkgisandroid.View.ListVIewForScrollView
+                    android:id="@+id/list_assessment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="2dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" >
+                </com.mobo.zggkgisandroid.View.ListVIewForScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

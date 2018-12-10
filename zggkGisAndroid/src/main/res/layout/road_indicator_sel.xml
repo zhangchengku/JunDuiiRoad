@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/map_select_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_gray"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="@string/map_select" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/tab_select_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_gray"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="@string/tab_select" />
+
+</LinearLayout>

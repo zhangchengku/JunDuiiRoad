@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.mobo.zggkgisandroid.View.PieChart01View
+        android:id="@+id/piechart_one"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <com.mobo.zggkgisandroid.View.ListVIewForScrollView
+        android:id="@+id/statistics_layout_child_one_lv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        android:listSelector="@android:color/transparent" />
+
+    <com.mobo.zggkgisandroid.View.ListVIewForScrollView
+        android:id="@+id/statistics_layout_child_one_lv2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

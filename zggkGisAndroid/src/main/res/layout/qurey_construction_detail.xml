@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/qurey_result_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/qurey_construction_detail_name"
+            style="@style/qurey_tunne_detail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G108路面养护工程" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在路线：" />
+
+            <TextView
+                android:id="@+id/qurey_construction_detail_road"
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在路线：" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="桩        号：" />
+
+            <TextView
+                android:id="@+id/qurey_construction_detail_station"
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="桩号：" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资金额：" />
+
+            <TextView
+                android:id="@+id/qurey_construction_detail_investment_money"
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资金额：" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成进度：" />
+
+            <TextView
+                android:id="@+id/qurey_construction_detail_comp_progress"
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成进度：" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管养单位：" />
+
+            <TextView
+                android:id="@+id/qurey_construction_detail_manage_unit"
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管养单位" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="施工单位：" />
+
+            <TextView
+                android:id="@+id/qurey_construction_detail_construct_unit"
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="施工单位：" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="技术等级：" />
+
+            <TextView
+                android:id="@+id/qurey_construction_detail_technical_grade"
+                style="@style/qurey_tunne_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="技术等级：" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

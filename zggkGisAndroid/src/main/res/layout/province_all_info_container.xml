@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DEFFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/road_indicator_province_info_txt"
+        style="@style/results_detall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/judge_total_num" />
+
+        <TextView
+            android:id="@+id/road_indicator_total_num_txt"
+            style="@style/results_detall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/road_milis" />
+
+        <TextView
+            android:id="@+id/road_indicator_mil_txt"
+            style="@style/results_detall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/results_detall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aver_indicator" />
+
+        <TextView
+            android:id="@+id/road_indicator_info_txt"
+            style="@style/results_detall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <!--
+    <TextView
+        android:id="@+id/province_info_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:text="XX省总体概况"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国道："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/province_info_guodao_num_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="xx条"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="省道："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/province_info_shengdao_num_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="xx条"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="县道："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/province_info_xiandao_num_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="xx条"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总里程："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/province_info_total_mili_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="435公里"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="桥梁："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/province_info_bridge_total_num_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="435公里"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="总里程："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/province_info_bridge_total_mili_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xx延米"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="十二五新建公路里程："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/province_info_new_road_mili_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xx公里"
+            android:textSize="15sp" />
+    </LinearLayout>
+    -->
+
+</LinearLayout>
